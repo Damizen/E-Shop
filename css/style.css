@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+html, body{
+  background-color: #e5ece9;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+nav{
+    background-color: #002f34;
+    height: 76px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    float: left;
+    z-index: 1;
+}
+#logo
+{
+    color: white;
+    margin-left: 20px;
+    float: left;
+    margin-left: 200px;
+}
+
+#welcomeUser
+{
+  color: white;
+  margin-right: 30px;
+  margin-top: 10px;
+  float: right;
+}
+.loginButton{
+    float: right;
+    appearance: none;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px;
+    margin-right: 30px;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    
+}
+.loginButton:disabled {
+  pointer-events: none;
+}
+
+.loginButton:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.loginButton:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+#registerButton{
+  float: right;
+  appearance: none;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+  margin-right: 100px;
+  min-height: 40px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  
+}
+#registerButton:disabled {
+pointer-events: none;
+}
+
+#registerButton:hover {
+color: #fff;
+background-color: #1A1A1A;
+box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+transform: translateY(-2px);
+}
+
+#registerButton:active {
+box-shadow: none;
+transform: translateY(0);
+}
+.cartImage
+{
+    float: right;
+    height: auto;
+    margin-top: calc((76px - 47.92px) / 2);
+    width: 68px;
+}
+.product
+{
+  width: 60%;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-color: black;
+  margin-top: 100px;
+  display: flex;
+  margin-bottom: 30px;
+}
+.productImage
+{
+  width: 333px;
+  height: 250px;
+  float: left;
+}
+.description
+{
+  width: 433px;
+  height: 250px;
+  float: left;
+  margin-left: 40px;
+}
+.rating{
+  width: 150px;
+  height: 250px;
+  float: left;
+  margin-left: 30px;
+  text-align: center;
+}
+.price
+{
+  height: 250px;
+  width: 150px;
+  float: left;
+  text-align: center;
+  margin-left: 30px;
+}
+.productCounting
+{
+  padding-top: 40%;
+}
+.btnlogout{
+    float: right;
+    appearance: none;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 10px;
+    margin-right: 10px;
+    min-height: 40px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+    
+}
+
+.btnlogout:disabled {
+    pointer-events: none;
+}
+
+.btnlogout:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btnlogout:active{
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+#CartNav{
+  height: 65px;
+  background-color: #002f34;
+}
+#HelloDiv
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 20%;
+  height: 100%;
+  color: white;
+  text-align: center;
+}
+
+.addButton {
+  text-decoration: none;
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00D775, #00BD68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width:130px;
+  border: 0;
+  text-align: center;
+}
+
+.addButton:hover {
+  background: #00bd68;
+}
+.cartProduct
+{
+  margin-top: 200px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 45%;
+  height: 125px;
+  border-left-style: inset;
+  border-bottom-style: inset;
+  border-color: #e9dada;
+}
+.cartProductImage
+{
+  width: 200px;
+  height: 100%;
+  float: left;
+}
+.cartProductTitle
+{
+  font-weight: bold;
+  margin-top: 40px;
+  width: 180px;
+  height: 100%;
+  float: left;
+  margin-left: 40px;
+}
+.cartProductPrice
+{
+  margin-top: 40px;
+  width: 150px;
+  height: 100%;
+  float: left;
+  margin-left: 40px;
+}
+.cartProductQuantity
+{
+  margin-top: 50px;
+  width: 100px;
+  height: 100%;
+  float: left;
+  margin-left: 40px;
+}
+.cartProductDelete
+{
+  margin-top: 40px;
+  width: 100px;
+  height: 100%;
+  float: left;
+  margin-left: 40px;
+}
+
+a{
+  color: rgb(230, 16, 16);
+  text-decoration: none;
+}
+
+a:visited{
+  text-decoration: none;
+}
+.total{
+  float: right;
+  margin-right: 40px;
+}
+h4{
+  color: #146ea1;
+  margin-left: 40px;
+}
+#panelNav
+{
+  height: 65px;
+  background-color: #002f34;
+  text-align: center;
+}
+#container
+{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 250px;
+}
+.adminOption
+{
+  display: flex;
+  width: 270px;
+  height: 240px;
+  background-color: #002f34;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 900;
+}
+table, th, td {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
+}
+#container2
+{
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#containerEdit
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
